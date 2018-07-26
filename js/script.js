@@ -11,17 +11,17 @@ function drawChart() {
     dataTable.addColumn({ type: 'date', id: 'Start' });
     dataTable.addColumn({ type: 'date', id: 'End' });
     dataTable.addRows([
-      [ 'January', new Date(2018, 1, 21), new Date(2018, 1, 31) ],
-      [ 'Febrary', new Date(2018, 2, 4),  new Date(2018, 2, 13) ],
-      [ 'March',  new Date(2018, 3, 1),  new Date(2018, 3, 30) ],
+      [ 'Research', new Date(2018, 7, 26), new Date(2018, 8, 29) ],
+      [ 'Proposal', new Date(2018, 7, 28),  new Date(2018, 7, 29) ],
+      [ 'Survey',  new Date(2018, 8, 1),  new Date(2018, 8, 3) ],
       [ 'April',  new Date(2018, 4, 4),  new Date(2018, 4, 28) ],
       [ 'May',  new Date(2018, 5, 1),  new Date(2018, 5, 19) ],
       [ 'June',  new Date(2018, 6, 4),  new Date(2018, 6, 24) ],
-      [ 'July',  new Date(2018, 7, 1),  new Date(2018, 7, 21) ],
+      [ 'July',  new Date(2018, 7, 1),  new Date(2018, 7, 21) ]
     ]);
 
     var options = {
-      colors: ['#83a1d1', '#ba86a5', '#82b588'],
+      colors: ['#83a1d1', '#ba86a5', '#82b588', '#ad7d79', '#797087', '#b2829c'],
     };
 
     chart.draw(dataTable, options);
